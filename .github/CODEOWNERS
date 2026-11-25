@@ -1,0 +1,2 @@
+# Pipeline and ownership files are owned by the platform team (last matching pattern wins).
+/.github/ @api-mgmt-poc/platform-team

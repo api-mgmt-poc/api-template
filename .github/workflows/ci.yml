@@ -1,0 +1,14 @@
+# Calls the central validation workflow. The resulting check "validate / lint" is required by the ruleset.
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    uses: api-mgmt-poc/workflow-templates/.github/workflows/api-validate.yml@1ebac477e007871f3f1285c9327cec1016343e1b
